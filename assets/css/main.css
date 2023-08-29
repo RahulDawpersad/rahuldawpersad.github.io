@@ -2942,7 +2942,7 @@ input, select, textarea {
 		background-color: #ffffff;
 	}
 	::-webkit-scrollbar-thumb{
-		background-color: #05BFD8;
+		background: linear-gradient(#870000, #190a05);
 		border-radius: 10px;
 		width: 4px;
 	}
@@ -3100,7 +3100,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-		    background-image: linear-gradient(45deg, #4fa49a, #4361c2); 
+		        background: linear-gradient(#870000, #190a05); 
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3131,6 +3131,11 @@ input, select, textarea {
 	}
 /*portfolio*/
 /*text class*/
+.text{
+	background: linear-gradient(#870000, #190a05);
+        -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
 
 /* Footer */
