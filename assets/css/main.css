@@ -3100,7 +3100,7 @@ input, select, textarea {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-		        background: linear-gradient(#870000, #190a05); 
+		        background-color: linear-gradient(#870000, #190a05); 
 			content: '';
 			height: 100%;
 			left: 0;
@@ -3146,7 +3146,7 @@ input, select, textarea {
 		height: 150px;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed, fixed, fixed;
-		background: linear-gradient(#870000, #190a05);
+		background-color: linear-gradient(#870000, #190a05);
 		background-position: top left, center center, center center;
 		background-size: auto, cover, cover;
 		text-align: center;
