@@ -3571,12 +3571,4 @@ input, select, textarea {
 			}
 	}
 
-.container .imghv{
-	transition: 0.5s linear;
-	cursor: pointer;
-}
 
-.container .imghv:hover{
-		transform: scale(1.1);
-		opacity: 0.9;
-	}
