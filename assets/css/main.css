@@ -133,9 +133,11 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #088395; /*All headings*/
-		font-weight: bolder;
+ h3, h4, h5, h6 {
+		background: linear-gradient(#870000, #190a05);
+                -webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: bold;
 		line-height: 1em;
 		margin: 0 0 1em 0;
 	}
