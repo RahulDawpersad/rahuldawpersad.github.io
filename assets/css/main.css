@@ -3142,7 +3142,6 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed, fixed, fixed;
 		background: linear-gradient(#870000, #190a05);
-		background: #333;
 		background-position: top left, center center, center center;
 		background-size: auto, cover, cover;
 		text-align: center;
