@@ -3142,11 +3142,10 @@ input, select, textarea {
 
 	#footer {
 		padding: 6em 0 6em 0 ;
-		/* background-color: #4686a0; */
 		height: 150px;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed, fixed, fixed;
-		background-color: linear-gradient(#870000, #190a05);
+		background: linear-gradient(#870000, #190a05);
 		background-position: top left, center center, center center;
 		background-size: auto, cover, cover;
 		text-align: center;
