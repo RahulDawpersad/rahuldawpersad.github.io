@@ -46,6 +46,10 @@ table {
 	border-spacing: 0;
 }
 
+.head-name{
+	color: #870000;
+}
+
 body {
 	-webkit-text-size-adjust: none;
 }
