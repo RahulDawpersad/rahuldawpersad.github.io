@@ -32,6 +32,10 @@ ol, ul {
 	list-style: none;
 }
 
+.img-about{
+	margin-top: 4em; 
+}
+
 blockquote, q {
 	quotes: none;
 }
