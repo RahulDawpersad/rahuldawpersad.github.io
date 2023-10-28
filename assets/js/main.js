@@ -1,3 +1,9 @@
+// Making the loader functional
+setTimeout(function () {
+	$(".wrapper").fadeOut();
+  }, 3000);
+  
+
 
 
 
