@@ -37,6 +37,7 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el)); //Tell the observer to observe
 
 // Making the loader functional
-setTimeout(function () {
-  $(".wrapper").fadeOut();
-}, 3000);
+// Loader
+setTimeout(function(){
+  $('.wrapper').fadeToggle();
+}, 4000);
