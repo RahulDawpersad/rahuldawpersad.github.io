@@ -90,23 +90,23 @@ body {
   .navbar ul li a {
     min-width: 100px;
     padding: 0 20px;
-  }
+  } 
 }
 
 /* Responsive Design for Extra Small Screens (Phones) */
 @media (max-width: 767px) {
-  .navbar {
+   .navbar {
     padding: 0;
-  }
+  } 
 
   .navbar ul {
-    width: 100%;
+     width: 100%;
     padding: 0;
     background: linear-gradient(90deg, #800100, #310804);
     height: 100vh;
     max-height: 0;
     overflow: hidden;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s; 
   }
 
   .navbar ul.open {
@@ -114,7 +114,7 @@ body {
   }
 
   .navbar ul li {
-    width: 100%;
+    width: 100%; 
   }
 
   .navbar ul li a {
@@ -133,7 +133,7 @@ body {
     border: 0;
     outline: none;
     padding: 0 5px;
-    cursor: pointer;
+    cursor: pointer; 
   }
 
   .navbar .navbar-toggler span,
@@ -359,87 +359,8 @@ span{
   transform: translateX(0);
 }
 
-/* Styling the loader */
-.wrapper{
-  position: fixed;
-  display: grid;
-  place-items: center;
-  background: #ffffff;
-  inset: 0;
-  height: 100vh;
-  width: auto;
-  z-index: 99999999;
-}
-
-.loader {
-  position: relative;
-  width: 120px;
-  height: 90px;
-  margin: 0 auto;
-}
-
-.loader:before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 50px;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  background: #000;
-  animation: loading-bounce 0.5s ease-in-out infinite alternate;
-}
-
-.loader:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 7px;
-  width: 45px;
-  border-radius: 4px;
-  box-shadow: 0 5px 0 #ffffff, -35px 50px 0 #ffffff, -70px 95px 0 #ffffff;
-  animation: loading-step 1s ease-in-out infinite;
-}
-
-@keyframes loading-bounce {
-  0% {
-    transform: scale(1, 0.7);
-  }
-
-  40% {
-    transform: scale(0.8, 1.2);
-  }
-
-  60% {
-    transform: scale(1, 1);
-  }
-
-  100% {
-    bottom: 140px;
-  }
-}
-
-@keyframes loading-step {
-  0% {
-    box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
-            0 10px 0 #800100,
-            -35px 50px 0 #800100,
-            -70px 90px 0 #800100;
-  }
-
-  100% {
-    box-shadow: 0 10px 0 #800100,
-            -35px 50px 0 #800100,
-            -70px 90px 0 #800100,
-            -70px 90px 0 rgba(0, 0, 0, 0);
-  }
-}
-
-
-
 /* For Mobile devices with 375px  */
-@media (max-width: 375px){
+/* @media (max-width: 375px){
   .home-content{
     display: grid;
     place-items: center;
@@ -454,10 +375,94 @@ span{
     width: 300px;
 
   }
+} */
+/* For Mobile devices with a width of 375px */
+@media (max-width: 375px) {
+  .home-content .home-heading {
+    font-size: 1.4em;
+    width: 300px;
+    padding: 2em 0;
+  }
+
+  .home-content .home-subheading {
+    font-size: 0.9em;
+    width: 300px;
+  }
+
+  .btn {
+    margin-top: 5em;
+  }
+
+  .blog-heading-container {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+  }
+
+  .blog-heading-container .blog-header {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2em 2em;
+    margin-top: 3em;
+    margin-left: 0.1em;
+  }
+
+  .blog-heading-container .blog-header-two {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0;
+    margin-left: -0.7em;
+    margin-top: -1em;
+    width: 350px;
+  }
+
+  .blog-heading-container .blog-paragraph {
+    color: #646262;
+    text-align: center;
+    font-size: 1em;
+    padding: 2em 2em;
+    margin-left: 0.6em;
+    width: 390px;
+  }
+
+  .choose-us {
+    text-align: center;
+  }
+
+  .services {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .services img {
+    margin-left: 4em;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .services .service-header {
+    color: #800100;
+    font-size: 1.2em;
+    width: 80%;
+    margin-left: 1.9em;
+    margin-top: 2em;
+  }
+
+  .services .services-paragraph {
+    color: #646262;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 2em 2em;
+    margin-left: 0.6em;
+    width: 390px;
+  }
 }
 
+
 /* For Mobile devices with 412px  */
-@media (max-width: 428px){
+/* @media (max-width: 428px){
   .home-content{
     display: grid;
     place-items: center;
@@ -531,19 +536,107 @@ span{
     margin-left: 0.6em;
     width: 390px;
   }
+} */
+/* For Mobile devices with a width of 428px */
+@media (max-width: 428px) {
+  .home-content {
+    display: grid;
+    place-items: center;
+  }
+
+  .home-content .home-heading {
+    font-size: 1.35em;
+    width: 300px;
+    padding: 2em 0;
+  }
+
+  .home-content .home-subheading {
+    font-size: 0.9em;
+    width: 300px;
+  }
+
+  .btn {
+    margin-top: 5em;
+  }
+
+  .blog-heading-container {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+  }
+
+  .blog-heading-container .blog-header {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 2em 2em;
+    margin-top: 2em;
+    margin-left: 0.1em;
+  }
+
+  .blog-heading-container .blog-header-two {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em 0;
+    margin-left: -0.7em;
+    margin-top: -1em;
+    width: 350px;
+  }
+
+  .blog-heading-container .blog-paragraph {
+    color: #646262;
+    text-align: center;
+    font-size: 1em;
+    padding: 2em 2em;
+    width: 350px;
+  }
+
+  .choose-us {
+    text-align: center;
+  }
+
+  .services {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .services img {
+    margin-left: 4em;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .services .service-header {
+    color: #800100;
+    font-size: 1.2em;
+    width: 80%;
+    margin-left: 1.9em;
+    margin-top: 2em;
+  }
+
+  .services .services-paragraph {
+    color: #646262;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 2em 2em;
+    margin-left: 0.6em;
+    width: 350px;
+  }
 }
 
+
 /* Laptops */
-@media (min-width: 1024px){
+/* @media (min-width: 1024px){ */
   /* Home Section */
- .home-content .home-heading{
+ /* .home-content .home-heading{
   padding: 0.4em;
  }
  .home-content .home-subheading{
   padding: 1em;
- }
+ } */
   /* Blog Section */
-  .blog-heading-container{
+  /* .blog-heading-container{
     display: grid;
     place-items: center;
     align-items: center;
@@ -595,9 +688,76 @@ span{
     width: 600px;
   }
   
+} */
+/* For Laptops (width >= 1024px) */
+@media (min-width: 1024px) {
+  .home-content .home-heading {
+    padding: 0.4em;
+  }
+
+  .home-content .home-subheading {
+    padding: 1em;
+  }
+
+  .blog-heading-container {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: auto;
+  }
+
+  .blog-heading-container .blog-header {
+    font-size: 1.55em;
+    padding: 2.8em 1.9em;
+    margin-top: 2em;
+  }
+
+  .blog-heading-container .blog-header-two {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: -1.6em;
+    width: 100%;
+  }
+
+  .blog-heading-container .blog-paragraph {
+    color: #646262;
+    font-size: 1.1em;
+    padding: 2em 2em;
+    max-width: 100%;
+    padding: 0;
+    margin: 2em 2em;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services img {
+    margin-right: 10em;
+    margin-top: 4.5em;
+  }
+  
+  .services-container .service-header {
+    color: #800100;
+    font-size: 1.3em;
+    text-align: center;
+    justify-content: center;
+    margin: 1em;
+    padding: 0;
+  }
+
+  .services-container .services-paragraph {
+    font-size: 1em;
+    width: 600px;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+
+/* @media (min-width: 768px) and (max-width: 1024px){
   .home-content{
     display: grid;
     place-items: center;
@@ -670,5 +830,156 @@ span{
     padding: 2em 2em;
     width: 700px;
     margin-left: 1em;
+  }
+} */
+/* For Tablets (width >= 768px and width <= 1024px) */
+/* For Tablets (width >= 768px and width <= 1024px) */
+/* For Tablets (width >= 768px and width <= 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-content {
+    display: grid;
+    place-items: center;
+  }
+
+  .home-content .home-heading {
+    font-size: 2em;
+    padding: 2em 0;
+  }
+
+  .home-content .home-subheading {
+    font-size: 1.2em;
+  }
+
+  .blog-heading-container {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+  }
+
+  .blog-heading-container .blog-header {
+    text-align: center;
+    font-size: 1.8em;
+    padding: 1em 2em;
+    margin-top: 1em;
+    margin-left: 0.1em;
+  }
+
+  .blog-heading-container .blog-header-two {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 1em 0;
+    margin-left: -0.7em;
+    margin-top: -1em;
+  }
+
+  .blog-heading-container .blog-paragraph {
+    color: #646262;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    margin-left: 0.6em;
+    max-width: 100%;
+  }
+
+  .choose-us {
+    text-align: center;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  .services img {
+    max-width: 100%; /* Make sure the images don't overflow */
+  }
+
+  .services .service-header {
+    color: #800100;
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+
+  .services .services-paragraph {
+    color: #646262;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em 2em;
+    margin-left: 0.6em;
+    max-width: 100%;
+  }
+}
+
+/* For Phones (width <= 320px and height <= 568px) */
+@media (max-width: 320px){
+  .home-content {
+    text-align: center;
+  }
+
+  .home-content .home-heading {
+    font-size: 0.9em;
+    padding: 1em 0;
+  }
+
+  .home-content .home-subheading {
+    font-size: 0.9em;
+  }
+
+  .blog-heading-container {
+    overflow-x: hidden;
+  }
+
+  .blog-heading-container .blog-header {
+    text-align: center;
+    font-size: 1em;
+    width: 250px;
+    padding: 1em 1em;
+    margin-left: -2em;
+  }
+
+  .blog-heading-container .blog-header-two {
+    font-size: 1em;
+    text-align: center;
+    padding: 1em 0;
+  }
+
+  .blog-heading-container .blog-paragraph {
+    color: #646262;
+    text-align: center;
+    margin-left: -2em;
+    width: 290px;
+    font-size: 0.8em;
+    padding:0em 1em;
+  }
+
+  .choose-us {
+    text-align: center;
+    font-size: 1em;
+    margin-left: -0.1em;
+  }
+
+  .services {
+    text-align: center;
+  }
+
+  .services img {
+    max-width: 100%;
+  }
+
+  .services .service-header {
+    color: #800100;
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+
+  .services .services-paragraph {
+    color: #646262;
+    text-align: center;
+    width: 290px;
+    font-size: 0.8em;
+    padding: 1em 1em;
   }
 }
