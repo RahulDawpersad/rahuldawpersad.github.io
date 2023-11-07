@@ -3305,14 +3305,16 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
+		position: relative;
 		padding: 6em 0 6em 0 ;
-		height: 150px;
+		height: 100%;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed, fixed, fixed;
 		background: linear-gradient(#870000, #190a05);
 		background-position: top left, center center, center center;
 		background-size: auto, cover, cover;
 		text-align: center;
+		z-index: 1; /* Ensure footer is in a higher layer */
 	}
 
 		#footer a {
@@ -3436,11 +3438,11 @@ input, select, textarea {
 					color: #E4405F;
 				}
 
-				.copyright .foot{
+/* 				.copyright .foot{
 					font-style: oblique;
 					font-weight: 890;
 					color: red;
-				}
+				} */
 				.inner .logo{
 					font-style: oblique;
 					font-weight: bolder;
