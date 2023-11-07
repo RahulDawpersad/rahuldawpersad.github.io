@@ -308,14 +308,64 @@ span{
 }
 
 /* Footer */
-.footer {
+/* .footer {
   background: linear-gradient(90deg, #800100, #310804);
   color: #fff;
   text-align: center;
   padding: 20px;
+} */
+
+/* .contact-details, .social-icons {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.contact-details, .social-icons {
+.contact-details h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+ */
+/* Style the social media icons */
+/* .social-icons .social-link {
+  display: inline-block;
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}*/
+
+/* .social-icons .social-link:hover{
+  color: #000000;
+} */
+/* FOOTER */
+.footer {
+  position: relative;
+  padding: 50px;
+  height: 100%;
+  color: rgba(255, 255, 255, 0.75);
+  background-attachment: fixed, fixed, fixed;
+  background: linear-gradient(#870000, #190a05);
+  /* background: #333; */
+  background-position: top left, center center, center center;
+  background-size: auto, cover, cover;
+  text-align: center;
+  z-index: 1; /* Ensure footer is in a higher layer */
+}
+
+.contact-details {
+  margin: 1em;
+}
+
+.contact-details,
+.social-icons {
   max-width: 600px;
   margin: 0 auto;
 }
@@ -338,13 +388,26 @@ span{
   font-size: 24px; /* Adjust the size as needed */
   color: #fff;
   margin: 0 10px;
+  padding: 10px;
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.social-icons .social-link:hover{
+.social-icons .social-link:hover {
   color: #000000;
 }
+
+.copyright .designx-text {
+  position: absolute;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  bottom: 3px; /* Align the text to the bottom of the footer */
+  left: 0; /* Align the text to the left within the footer */
+  right: 0; /* Align the text to the right within the footer */
+  margin: 0; /* Remove any default margin */
+}
+
+/* END OF FOOTER */
 
 .hidden{
   opacity: 0; /*Making the elements visible*/
