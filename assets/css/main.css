@@ -3306,7 +3306,8 @@ input, select, textarea {
 
 	#footer {
 		position: relative;
-		padding: 6em 0 6em 0 ;
+/* 		padding: 6em 0 6em 0 ; */
+		padding: 50px ;
 		height: 100%;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed, fixed, fixed;
@@ -3443,6 +3444,18 @@ input, select, textarea {
 					font-weight: 890;
 					color: red;
 				} */
+
+				.copyright .designx-text{
+					position: absolute;
+					font-weight: bold;
+					text-transform: uppercase;
+					bottom: 4px; /* Align the text to the bottom of the footer */
+					left: 0; /* Align the text to the left within the footer */
+					right: 0; /* Align the text to the right within the footer */
+					margin: 0; /* Remove any default margin */
+				}
+
+
 				.inner .logo{
 					font-style: oblique;
 					font-weight: bolder;
