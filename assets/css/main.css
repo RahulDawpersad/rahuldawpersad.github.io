@@ -147,6 +147,51 @@ body {
 	}
   }
 
+/* Cookie Popup */
+#cookie-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+     width: 100%;
+    /* background-color: #f0f0f0; */
+    background: #222;
+    padding: 40px;
+    text-align: center;
+	z-index: 9999999;
+  }
+  
+  #cookie-popup p {
+    margin: 0;
+	color: #fff;
+  }
+
+  .cookie-link{
+    color: rgb(0, 110, 255);
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  .button-container .btn-accept, .btn-not{
+    background: #720201;
+	color: #fff;
+    border: none;
+    padding: 0.5px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+	transition: background 1s ease-in;
+  }
+
+  .button-container .btn-accept, .btn-not:hover{
+    background: #fffbfb;
+	color: #fff;
+  }
+/* End of cookie popup */
+
 ol, ul {
 	list-style: none;
 }
