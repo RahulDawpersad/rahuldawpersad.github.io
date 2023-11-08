@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
   // Icon Functionality
   function iconBtn(){
-    window.location.href = './assets/html/cookie.html';
+    window.location.href = 'cookie.html';
   }
 
 
