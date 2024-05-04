@@ -1,276 +1,661 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>DesignX</title>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE-edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
-		<link rel="shortcut icon" href="images/close.png" type="image/x-icon">
-		<!--Link to Linkbot Snippet-->
-		<script type="text/javascript" id="pagemapIdscript" defer src="https://bot.linkbot.com/bot.js#21949-bae34?property-id=21949-bae34"></script>
-		<!--End of Linkbot-->
-		<link rel="stylesheet" href="assets/css/main.css"/>
-		<script src="https://kit.fontawesome.com/62e13c9046.js" crossorigin="anonymous"></script>
-               <!-- Google Adsense -->
-<!-- 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9213066977725342"
-                crossorigin="anonymous"></script> -->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
-	</head>
-	<body class="is-preload"  oncontextmenu="return false">
 
-		       <!-- Loader -->
-                      <div class="wrapper">
-                     <div class="loader"></div>
-                     <div class="loader"></div>
-                     <div class="loader"></div>
-                     </div>
+<head>
+    <meta charset="utf-8">
+    <title>DesignX | Web & Graphic Design</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-		 <!-- Floating Whatsapp Icon -->
-    <script
-    src="https://static.elfsight.com/platform/platform.js"
-    data-use-service-core
-    defer
-  ></script>
-  <div class="elfsight-app-ae72a755-2e32-44b2-a095-eca3d18b7c20"></div>
-    <!-- Floating Whatsapp Icon -->
+    <!-- Favicon -->
+    <link href="img/code-s-slash-line.png" rel="icon">
 
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
+    <!-- Link to Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/655b3b7e45.js" crossorigin="anonymous"></script>
 
-		<!-- Cookie -->
-<!--  <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="//cdn.cookie-script.com/s/6a0230314821ee9f306c701b0f2e4ac9.js"
-    ></script> -->
-		
-		<!--<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-ae72a755-2e32-44b2-a095-eca3d18b7c20"></div>-->
-		
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<span class="hidden">
-					<img src="images/IconWhiteGradient.png">
-					</span>
-					<h1 class="hidden">WELCOME TO DESIGN<span class="logo">X</span></h1>
-					<p class="hidden">Developed By Rahul Dawpersad</p>
-					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">learn More</a></li>
-					</ul>
-				</div>
-			</section>
-		
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-		 <!-- Cookie Poppup -->
-    <div id="cookie-popup">
-      <p>
-        This website uses cookies to ensure you get the best experience. By
-        continuing to use this site, you agree to my
-        <a href="cookie.html" class="cookie-link"
-          ><em>Cookie Policy</em></a
-        >.
-      </p>
-      <div class="button-container">
-        <button id="accept-cookies" class="btn-accept">Accept</button>
-        <button id="decline-cookies" class="btn-accept">Decline</button>
-      </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:500,700&display=swap" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="scss/module.css">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <script>
+        setTimeout(function () {
+            $('.loader-wrapper').fadeToggle();
+        }, 5000);
+    </script>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div class="loader-wrapper">
+        <div class="loader"></div>
     </div>
-    <!-- End of COOKIE POPUP -->
+    <!-- Preloader End -->
+
+    <!-- Navbar Start -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="logo-wrapper">
+                <img src="img/icons8-code-96.png" class="computer-logo" alt="">
+                <a href="#" class="nav__logo">DESIGNX<span></span></a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="https://www.rahuldawpersad.com/blog.html" class="nav__link">Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">contact</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <!-- Login button -->
+                <!-- <i class="ri-user-line nav__login nav__link" id="login-btn"></i> -->
+                <i class="ri-folder-video-fill nav__login nav__link" id="login-btn"></i>
+
+                <a href="https://github.com/RahulDawpersad">
+                    <i class="ri-github-fill nav__link github"></i>
+                </a>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Video & Github Icon Link Code Extract -->
+    <div class="login" id="login">
+        <div class="login__video-container">
+            <video controls autoplay muted class="login__video">
+                <source src="img/DesignX_Startup-Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <i class="ri-close-line login__close" id="login-close"></i>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Swiper/Carousel Start -->
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/carousel4.jpg" alt="" class="image" />
+                <div class="image-data">
+                    <h1 class="text hidden">WELCOME TO DESIGNX</h1>
+                    <p class="text-two hidden">
+                        Your go-to destination for creative <br /> web development and graphic design solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="img/carousel3.jpg" alt="" class="image" />
+                <div class="image-data">
+                    <h1 class="text hidden">Unleash Your Brand's Potential</h1>
+                    <p class="text-two hidden">
+                        Elevate your online presence with stunning <br> website designs and captivating graphic content.
+                    </p class="text-two">
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="img/carousel2.jpg" alt="" class="image" />
+                <div class="image-data">
+                    <h1 class="text hidden">Innovative Design Solutions</h1>
+                    <p class="text-two hidden">
+                        From concept to execution, I bring your <br /> ideas to life with precision and creativity.
+                    </p class="text-two">
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper/Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="about-img">
+                        <div class="about-header">
+                            <div class="about-text hidden">ABOUT <span>DESIGNX</span></div>
+                        </div>
+                        <!-- <hr /> -->
+                        <p class="mb-4 hidden">
+                            My name is Rahul Dawpersad, and I'm the founder of DesignX. It was developed and hosted on
+                            the
+                            27th of June 2023 out of my passion for systems development, particularly web development.
+                        </p>
+                        <img class="img-fluid hidden" src="img/webdev2.gif" alt="about-img-gif">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="heading-container">
+                        <h1 class="mb-4 about-header hidden">Developing <span>Websites</span></h1>
+                        <!-- <hr /> -->
+                    </div>
+
+                    <p class="mb-4 hidden">
+                        Designing Websites for DesignX is not a part-time or sideline job. I design websites for my
+                        clients that stand out from the competition. DesignX is a fully registered business that is
+                        dedicated to crafting exceptional websites tailored to your unique needs.
+                    </p>
+                    <p class="mb-4 hidden">
+                        With a passion for creativity and innovation, DesignX strives to create visually stunning and
+                        highly functional websites that leave a lasting impression on your audience. Each project is
+                        approached with meticulous attention to detail, ensuring that your website reflects the essence
+                        of your brand and helps you achieve your business goals.
+                    </p>
+                    <p class="mb-4 hidden">
+                        I take pride in the quality of work delivered by DesignX. From sleek and modern designs to
+                        user-friendly interfaces, I am committed to providing you with a superior product that sets you
+                        apart in the digital landscape.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
 
 
 
-			<!--Portfolio-->
-		<!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2 class="text hidden">ABOUT ME</h2>
-							</header>
-							<p class="hidden">
-								Hi i'm <span class="head-name">Rahul Dawpersad.</span><br/> 
-								I am a web developer based in Durban, KZN, South Africa. 
-								I enjoy designing everything from small business sites to simple interactive 
-								web pages. I am a developer who is passionate about creating beautiful and 
-								functional websites using HTML5, CSS3, Javascript, React.js, and bootstrap.  
-							</p>
-							<p class="hidden">
-								I have experience in developing form based applications for desktops using
-								 C#(.NET Framework), and Python, and connecting them to SQL Server.
-							</p>
-							<br/>
-							<div class="btn-container hidden">
-                                                        <!-- Button Link To Blog html -->
-                                                        <a href="blog.html" class="blog-link">
-                                                         <button class="btn-blog">
-                                                         <p class="btn-blog-text">BLOG</p>
-                                                         </button>
-                                                        </a>
-                                                    </div>
-						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit hidden">
-<!-- 								<img src="images/WebDesign.jpg" class="img-about" /> -->
-<!-- 								<img src="images/chatbot.jpg" class="img-about"/> -->
-								<img src="assets/css/images/AI3.webp" class="img-about"/>
-							</span> 
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Service Start -->
+    <section class="section-services" id="services">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="header-section">
+                        <h2 class="title hidden">DESIGNX <span></span> <span>Services</span></h2>
+                        <h2 class="title-two hidden">WHERE CODE IS ART <span>.</span></h2>
+                        <!-- <p class="description">
+                            What I Do.
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Start Single Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service hidden">
+                        <div class="part-1">
+                            <!-- <i class="fab fa-500px"></i> -->
+                            <img src="img/website-icon.png" class="icon-img fa-500px hidden" alt="">
 
-			<!--Web Development-->
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons hidden">
-								 <!-- Code Icon -->
-							    <li><span class="icon solid style1 major fa-code" style="background-color: rgb(255, 255, 255);"></span></li>
-								<li><span class="icon solid style2 major fa-mobile" style="background-color: rgb(255, 255, 255);"></span></li>
-								<li><span class="icon solid style4 major fa-desktop" style="background-color: rgb(255, 255, 255);"></span></li>
-								<li><span class="icon solid style5 major fa-laptop" style="background-color: rgb(255, 255, 255);"></span></li>
-								<li><span class="icon solid style5 major fa-tablet" style="background-color: rgb(255, 255, 255);"></span></li>
-								<li><span class="icon solid style6 major fa-globe" style="background-color: rgb(255, 255, 255);"></span></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major hidden">
-								<h2>web Development</h2>
-							</header>
-							<p class="hidden">Technology today plays a huge role in our daily lives, from the simplest of apps to the most groundbreaking inventions.
-							   Every website or piece of software that we encounter on a day-to-day basis has been built by a Developer, but 
-							   what exactly is web development.<br/>
-							</p>
-							<p class="hidden">
-							   Web development is the process of building websites and applications for the internet, or an intranet(private network).
-								Web development is a broad term that includes web design, web content development, web application development, web
-								hosting, and web maintenance.
-							</p>
-							<p class="hidden">
-								Getting further into designing a website, it must be responsive. A Responsive web design(RWD) is a web development 
-								approach that creates dynamic changes to the appearance of a website, depending on the screen size and orientation
-								 of the device being used to view it.<!-- A Responsive web design is one approach of designing for a multitude of
-								devices such as Phones, Tablets, Laptops, Desktops, and Monitors etc. -->
-								A responsive web design is about using HTML and CSS to automatically resize , hide, shrink, or enlarge, a website, to
-								make it look good on all devices such as: Phones, Tablets, Desktops, and Laptops, etc.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+                            <h3 class="title hidden">Web Development</h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description hidden">
+                                At DesignX, I am a talented website developer who loves creating new ideas and enjoy
+                                developing high quality web pages.
+                            </p>
+                            <a href="components/web-pricing.html" class="hidden" target="_blank"><i
+                                    class="fas fa-arrow-circle-right"></i>View Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- / End Single Service -->
+                <!-- Start Single Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service hidden">
+                        <div class="part-1">
+                            <!-- <i class="fab fa-angellist"></i> -->
+                            <img src="img/icons8-web-hosting-64.png" class="icon-img hosting fa-500px hidden" alt="">
+                            <h3 class="title hidden">Web Hosting</h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description hidden">
+                                <!-- I offer affordable hosting solutions for my client's websites on various platforms,
+                                ensuring reliable performance and accessibility. -->
+                                I provide hosting solutions, supporting various platforms, to help websites succeed. My
+                                goal is to ensure reliable performance and clear accessibility.
+                            </p>
+                            <a href="https://webfolio.co.za/components/pricing" class="hidden" target="_blank"><i
+                                    class="fas fa-arrow-circle-right"></i>View Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- / End Single Service -->
+                <!-- Start Single Service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service hidden">
+                        <div class="part-1">
+                            <!-- <i class="fas fa-award"></i> -->
+                            <img src="img/graphic-design.png" class="icon-img fa-500px hidden" alt="">
+                            <h3 class="title hidden">Graphic Design</h3>
+                        </div>
+                        <div class="part-2">
+                            <p class="description hidden">
+                                I design logos, ads, CVs, posters, and menus that help businesses stand out. My goal is
+                                to create modern designs that communicate my client's message.
+                            </p>
+                            <a href="https://graphic-and-web-development-projects.netlify.app/" class="hidden"
+                                target="_blank"><i class="fas fa-arrow-circle-right "></i>View Projects</a>
+                        </div>
+                    </div>
+                </div>
 
-			<!--My services-->
-		<!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major hidden">
-						<h2>WELCOME TO MY WORLD</h2>
-					</header>
-					<h3 class="hidden">WHERE CODE IS ART</h3>
-					<p class="hidden">The services that i offer:</p>
-					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
-							<span class="image fit hidden"><img src="images/frontenddev.jpg" height="220px" /></span>
-							<h3 class="hidden">WEBSITE DEVELOPMENT</h3>
-							<p class="hidden">I am a talented website developer who loves creating new ideas and
-							   enjoy developing high quality web pages to create engaging experiences 
-							   that will help my clients and their business grow.
-							</p>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit hidden"><img src="images/WebHosting.jpg" height="220px" /></span>
-							<h3 class="hidden">WEBSITE HOSTING</h3>
-							<p class="hidden">I will host my clients website on other hosting platforms at an affordable price.</p>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit hidden"><img src="images/LogoDesign.jpg"  height="220px" /></span>
-							<h3 class="hidden">BUSINESS LOGOS</h3>
-							<p class="hidden">I design & create modern business ads and logos for my client and for their business.
-							The ads/logos that i will create will be creative, concise and easy for 
-							my clients and their audience to read.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
 
 
+    <!-- Feature Start/ Why Choose Us -->
+    <div class="container-fluid feature pt-5" id="feature">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn hidden" data-wow-delay="0.3s">
+                    <div class="feature-heading">WHY CHOOSE DESIGNX</div>
+                    <h1 class="hidden mb-4 sub-header">
+                        DesignX: Best in the web development industry.
+                    </h1>
+                    <p class="mb-4 hidden">
+                        Bringing your unique vision to life with creativity, precision, and AI enhancements, ensuring
+                        every project reflects your individuality.
+                    </p>
+                    <div class="d-flex align-items-center mb-3 feature-wrapper">
+                        <div class="btn-sm-square rounded-circle me-3 hidden">
+                            <i class="fa fa-check icon-check"></i>
+                        </div>
+                        <span class="hidden">Tailoring your vision with creativity and precision.</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 feature-wrapper">
+                        <div class="btn-sm-square rounded-circle me-3 hidden">
+                            <i class="fa fa-check icon-check"></i>
+                        </div>
+                        <span class="hidden">Exceeding expectations with meticulous care.</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 feature-wrapper">
+                        <div class="btn-sm-square rounded-circle me-3 hidden">
+                            <i class="fa fa-check icon-check"></i>
+                        </div>
+                        <span class="hidden">Delivering top-tier results for your brand.</span>
+                    </div>
+                    <div class="row g-4 pt-3 client-wrap">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3 hidden" style="background: #f70037">
+                                <i class="fa fa-users fa-3x"></i>
+                                <div class="ms-3 feature-content">
+                                    <h2 class="mb-0 number" data-toggle="counter-up">100</h2>
+                                    <p class="mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3 hidden" style="background: #f70037;">
+                                <i class="fa fa-check fa-3x"></i>
+                                <div class="ms-3">
+                                    <h2 class="mb-0 number" data-toggle="counter-up">100</h2>
+                                    <p class="mb-0">Projects Complete</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
+                    <img class="img-fluid hidden" src="img/log-in-girl.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
 
-			<!--SignUp-->
-		<!-- Four -->
-			<!-- <section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>PROGRAMMING TOOLS FOR DEVELOPERS</h2>
-					</header>
-					<p>Visiters on this site can view the programming tools for
-						HTML5, CSS3, and JAVASCRIPT.
-					</p>
-					<ul class="actions special">
-						<li><a href="signup.html" class="button wide primary" target="_blank">HIRE ME</a></li>
-					 <li><a href="#" class="button wide">Learn More</a></li> -->
-					<!-- </ul>
-				</div>
-			</section> --> 
-<!--End SignUp-->
+    <!-- Pricing Start -->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <div class="sec-title text-center">
+                <h1 class="hidden title">DESIGNX <span>PRICING</span></h1>
+                <h2 class="hidden">Choose a Plan</h2>
+            </div>
+
+            <div class="outer-box">
+                <div class="row">
+                    <!-- Pricing Block -->
+                    <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                        <div class="inner-box hidden">
+                            <div class="icon-box hidden">
+                                <div class="icon-outer"><i class="fas fa-paper-plane"></i></div>
+                            </div>
+                            <div class="price-box">
+                                <div class="title hidden">Basic Website</div>
+                                <h4 class="price hidden">R 1700</h4>
+                            </div>
+                            <ul class="features">
+                                <li class="true hidden">
+                                    Custom Web Design
+                                </li>
+                                <li class="true hidden">Responsive Design</li>
+                                <li class="true hidden">Contact Form Integration</li>
+                                <li class="true hidden">Limited Pages</li>
+                                <li class="false hidden">No Databases</li>
+                            </ul>
+                            <div class="btn-box hidden">
+                                <a href="https://designx-contact-form.onrender.com/" target="_blank"
+                                    class="theme-btn">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Block -->
+                    <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="inner-box hidden">
+                            <div class="icon-box hidden">
+                                <div class="icon-outer"><i class="fas fa-gem"></i></div>
+                            </div>
+                            <div class="price-box">
+                                <div class="title hidden">Standard Website</div>
+                                <h4 class="price hidden">R 2700</h4>
+                            </div>
+                            <ul class="features">
+                                <li class="true hidden">All features of the Basic Plan</li>
+                                <li class="true hidden">Expanded Page Limit</li>
+                                <li class="true hidden">Blog Integration</li>
+                                <li class="true hidden">Social Media Integration</li>
+                                <li class="true hidden">Limited Databases</li>
+                            </ul>
+                            <div class="btn-box hidden">
+                                <a href="https://designx-contact-form.onrender.com/" target="_blank"
+                                    class="theme-btn">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing Block -->
+                    <div class="pricing-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="800ms">
+                        <div class="inner-box hidden">
+                            <div class="icon-box hidden">
+                                <div class="icon-outer"><i class="fas fa-rocket"></i></div>
+                            </div>
+                            <div class="price-box">
+                                <div class="title hidden">Advanced Website</div>
+                                <h4 class="price hidden">R 5000</h4>
+                            </div>
+                            <ul class="features">
+                                <li class="true hidden">All features of the Standard Plan</li>
+                                <li class="true hidden">Advanced Security</li>
+                                <li class="true hidden">Custom Features</li>
+                                <li class="true hidden">Simple E-commerce</li>
+                                <li class="true hidden">Database Expanded</li>
+                            </ul>
+                            <div class="btn-box hidden">
+                                <a href="https://designx-contact-form.onrender.com/" target="_blank"
+                                    class="theme-btn">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pricing End -->
+
+    <!-- Project Start -->
+
+    <section class="container-fluid photo-gallery py-5" id="projects">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="project-title">
+                    <h1 class="hidden project-header">DESIGNX PROJECTS</h1>
+                    <h2 class="hidden mb-4 project-sub-heading">Explore My Projects</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
+                <div class="col image-container">
+                    <img src="img/websites/nail&beauty (1).png" class="img-fluid image hidden"
+                        alt="Lorem ipsum dolor sit amet">
+                    <button class="view-button hidden" id="btnweb_one">View</button>
+                </div>
+                <div class="col image-container">
+                    <img src="img/websites/website2.png" class="img-fluid image hidden"
+                        alt="Ipsum lorem dolor sit amet">
+                    <button class="view-button hidden" id="btnweb_two">View</button>
+                </div>
+                <div class="col image-container">
+                    <img src="img/website3.png" class="img-fluid image hidden" alt="Dolor lorem ipsum sit amet">
+                    <button class="view-button hidden" id="btnweb_three">View</button>
+                </div>
+            </div>
+            <div class="btn-container text-center hidden">
+                <a class="fancy" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">VIEW MORE</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Project End -->
 
 
+    <!-- Contact Start -->
+    <div class="container-fluid contact-section py-5" id="contact">
+        <div class="container py-5">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="contact-text">
+                    <h1 class="hidden contact-header">CONTACT DESIGNX NOW</h1>
+                    <p class="hidden mb-4 contact-sub-header">Your Trusted Partner In Web Development Solutions</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <!-- <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <form id="contactForm" class="hidden" action="https://formspree.io/f/xeqygllk" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control hidden" id="name" name="name"
+                                            placeholder="John Doe">
+                                        <label for="name" class="hidden">Full Name</label>
+                                        <div class="error-message" id="nameError"></div>
+                                        <!-- Error message for name field -->
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control hidden" id="email" name="email"
+                                            placeholder="example@gmail.com">
+                                        <label for="email" class="hidden">Email Address</label>
+                                        <div class="error-message" id="emailError"></div>
+                                        <!-- Error message for email field -->
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control hidden" id="phone" name="phone"
+                                            placeholder="+27 99 999 9999">
+                                        <label for="phone" class="hidden">Phone Number</label>
+                                        <div class="error-message" id="phoneError"></div>
+                                        <!-- Error message for phone number field -->
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control hidden" placeholder="Leave a message here"
+                                            id="message" name="message" style="height: 150px"></textarea>
+                                        <label for="message" class="hidden">Message</label>
+                                        <div class="error-message" id="messageError"></div>
+                                        <!-- Error message for message field -->
+                                    </div>
+                                </div>
+                                <div class="col-12 hidden">
+                                    <button class="btn w-100 py-3 btn-send" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
 
-			<!--Contact Me-->
-		<!-- Footer -->
-			<section id="footer">
-				<ul class="icons hidden">
-					 <!--<li><a title="Facebook" href="" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-					 <!-- <li><a  title="Instagram" href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
-					<!-- <li><a  title="Github" href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li> -->
-					<!-- <li><a  title="whatsapp" href="https://wa.me/+27697020214" class="icon brands alt fa-whatsapp"><span class="label">whatsapp</span></a></li> -->
-					<li>
-                                         <script>
-                                           document.write(unescape('%20%3Ca%20title%3D%22Facebook%22%20href%3D%22https%3A//www.facebook.com/profile.php%3Fid%3D100093452210571%22%20class%3D%22icon%20brands%20alt%20fa-facebook-f%22%3E%3Cspan%20class%3D%22label%22%3EFacebook%3C/span%3E%3C/a%3E'))
-                                         </script> 
-                                        </li>
+    <!-- FAQs Start -->
 
-					<!-- Link to Github -->
-        <li>
-          <script>
-            document.write(
-              unescape(
-                "%20%20%20%20%20%20%20%20%20%20%3C%61%20%20%74%69%74%6C%65%3D%22%47%69%74%68%75%62%22%20%68%72%65%66%3D%22%68%74%74%70%73%3A%2F%2F%67%69%74%68%75%62%2E%63%6F%6D%2F%52%61%68%75%6C%44%61%77%70%65%72%73%61%64%22%20%63%6C%61%73%73%3D%22%69%63%6F%6E%20%62%72%61%6E%64%73%20%61%6C%74%20%66%61%2D%67%69%74%68%75%62%22%3E%3C%73%70%61%6E%20%63%6C%61%73%73%3D%22%6C%61%62%65%6C%22%3E%47%69%74%48%75%62%3C%2F%73%70%61%6E%3E%3C%2F%61%3E%0A"
-              )
-            );
-          </script>
-        </li>
-					
-					<li>
-				         <script>
-                                           document.write(unescape('%3Ca%20title%3D%22whatsapp%22%20href%3D%22https%3A//wa.me/+27697020214%22%20class%3D%22icon%20brands%20alt%20fa-whatsapp%22%20target%3D%22_blank%22%3E%3Cspan%20class%3D%22label%22%3Ewhatsapp%3C/span%3E%3C/a%3E'))
-                                        </script>
-					</li>
+    <!-- FAQs Start -->
 
-			<!-- Link to DesignX Cookies-->
-					<li>
-         <i class="fa-solid fa-cookie" style="color: #ffffff;" onclick="iconBtn()"></i> 
-        </li>
-				</ul>
-				<ul class="copyright hidden">
-<!-- 					<li>Design<span class="foot">X</span> @2023</li><li>Developed By Rahul Dawpersad</li> -->
-					<p class="designx-text">DesignX@2024</p>
-				</ul>
-			</section>
 
-			
+    <!-- Footer Start -->
+    <div class="container-fluid text-white-50 footer pt-5" style="background: #211f24;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3 hidden">
+                        <h1 class="text-white">DESIGN<span style="color: #f70037;">X</span></h1>
+                    </a>
+                    <p class="mb-0 hidden" style="font-style: oblique;">"Where Creativity Meets Code".</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="mb-4 footer-header hidden" style="color: #f70037;">Get In Touch</h5>
+                    <p style="color: #ffffff80;" class="footer-p hidden"><i class="fa fa-map-marker-alt me-3"
+                            style="color: #f70037;"></i>Durban, KZN, South Africa</p>
+                    <p style="color: #ffffff80;" class="footer-p hidden"><i class="fa fa-phone-alt me-3"
+                            style="color: #f70037;"></i>+27697020214</p>
+                    <p style="color: #ffffff80;" class="hidden"><i class="fa fa-envelope me-3"
+                            style="color: #f70037;"></i>designxfolio@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn  btn-social hidden" href="https://twitter.com/dawpersad15814"><i class="fab fa-twitter"></i></a>
+                        <a class="btn  btn-social hidden" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-social hidden" href="https://www.youtube.com/channel/UC9wwhtQ_DP8dVoc7_dj_Igg"><i class="fab fa-youtube"></i></a>
+                        <a class="btn  btn-social hidden" href="linkedin.com/in/rahul-dawpersad-5680b7281"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn  btn-social hidden" href="https://github.com/RahulDawpersad"><i class="fab fa-github"></i></a>
+                        <a class="btn  btn-social hidden" href="https://discord.com/users/1216339643281440900"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="mb-4 hidden" style="color: #f70037;">Links</h5>
+                    <a class="btn btn-link hidden" href="https://webfolio.co.za"
+                    target="_blank">www.webfolio.co.za</a>
+                    <a class="btn btn-link hidden" href="https://webfolio.co.za/components/founding"
+                        target="_blank">Founding</a>
+                    <a class="btn btn-link hidden" href="https://webfolio.co.za/" target="_blank">About Rahul
+                        Dawpersad</a>
+                    <a class="btn btn-link hidden" href="https://designx-contact-form.onrender.com/"
+                        target="_blank">Contact Now</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="mb-4 hidden" style="color: #f70037;">DesignX Services</h5>
+                    <a class="btn btn-link hidden"
+                        href="https://graphic-and-web-development-projects.netlify.app/public/components/websites.html"
+                        target="_blank">Web Development Projects</a>
+                    <a class="btn btn-link hidden"
+                        href="https://graphic-and-web-development-projects.netlify.app/index.html"
+                        target="_blank">Graphic Design Projects</a>
+                    <a class="btn btn-link hidden" href="" target="_blank">Code Solutions</a>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0 hidden">
+                        &copy; <a class="border-bottom" href="#">DesignX 2024</a>, All Right Reserved.
+                        Developed By <a class="border-bottom" href="https://www.webfolio.co.za">Rahul Dawpersad</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu hidden">
+                            <a href="index.html">Home</a>
+                            <a href="https://www.rahuldawpersad.com/cookie.html" target="_blank">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
 
-		<!--Link Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-		   <script src="index.js"></script> 
 
-	</body>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
 </html>
