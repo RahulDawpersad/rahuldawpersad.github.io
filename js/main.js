@@ -1,3 +1,7 @@
+setTimeout(function () {
+    $('.loader-wrapper').fadeToggle();
+}, 2700);
+
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     var nameInput = document.getElementById("name");
     var emailInput = document.getElementById("email");
