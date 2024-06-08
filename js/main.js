@@ -1,8 +1,8 @@
-setTimeout(function () {
-    $('.loader-wrapper').fadeToggle();
-}, 2700);
+// setTimeout(function () {
+//     $('.loader-wrapper').fadeToggle();
+// }, 2700);
 
-document.getElementById("contactForm").addEventListener("submit", function (event) {
+function validateForm() {
     var nameInput = document.getElementById("name");
     var emailInput = document.getElementById("email");
     var phoneInput = document.getElementById("phone");
@@ -13,64 +13,116 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     var phoneError = document.getElementById("phoneError");
     var messageError = document.getElementById("messageError");
 
+    var isValid = true;
+
     nameError.textContent = "";
     emailError.textContent = "";
     phoneError.textContent = "";
     messageError.textContent = "";
 
     if (nameInput.value.trim() === "") {
-        nameError.textContent = "Please enter your name.";
-        event.preventDefault();
+      nameError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please enter your name.`;
+      isValid = false;
     }
 
     if (emailInput.value.trim() === "") {
-        emailError.textContent = "Please enter your email.";
-        event.preventDefault();
+      emailError.innerHTML = "Please enter your email.";
+      isValid = false;
     } else {
-        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(emailInput.value.trim())) {
-            emailError.textContent = "Please enter a valid email address.";
-            event.preventDefault();
-        } else {
-            emailError.textContent = ""; // Clear the error message if email is valid
-        }
+      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailInput.value.trim())) {
+        emailError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please enter a valid email address.`;
+        isValid = false;
+      }
     }
 
     var phonePattern = /^(\+27|0)[0-9]{9,10}$/; // South African phone number pattern
     if (phoneInput.value.trim() === "") {
-        phoneError.textContent = "Please enter your phone number.";
-        event.preventDefault();
+      phoneError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please enter your phone number.`;
+      isValid = false;
     } else if (!phonePattern.test(phoneInput.value.trim())) {
-        phoneError.textContent = "Please enter a valid South African phone number.";
-        event.preventDefault();
+      phoneError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please enter a valid South African phone number.`;
+      isValid = false;
     }
 
     if (messageInput.value.trim() === "") {
-        messageError.textContent = "Please enter your message.";
-        event.preventDefault();
+      messageError.innerHTML = `<i class="fa-solid fa-circle-exclamation"></i> Please enter your message.`;
+      isValid = false;
     }
-});
 
-//create the intersection observer
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry) => {   //it can observe multiple entries at the same time
-        console.log(entry)
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        }else{
-            entry.target.classList.remove('show');
-        }
+    return isValid;
+  }
+
+  function submitForm(event) {
+    event.preventDefault();
+
+    if (!validateForm()) {
+      return false;
+    }
+
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+      document.getElementById('recaptchaError').innerHTML = `<i class="fa-solid fa-bug"></i> Please complete the reCAPTCHA.`;
+      return false;
+    }
+
+    const form = document.getElementById('contactForm');
+    const formData = new FormData(form);
+    formData.append('g-recaptcha-response', recaptchaResponse);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        form.reset();
+        grecaptcha.reset();
+        showModal();
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            alert(data["errors"].map(error => error["message"]).join(", "));
+          } else {
+            alert('Oops! There was a problem submitting your form');
+          }
+        });
+      }
+    }).catch(error => {
+      alert('Oops! There was a problem submitting your form');
     });
-});
-//grab all the elements that have that specific class.
-const hiddenElements = document.querySelectorAll('.hidden');
 
-//tell it what to observe
-hiddenElements.forEach((el)=> observer.observe(el)); //Tell the observer to observe
+    return false;
+  }
+
+  function showModal() {
+    const modal = document.getElementById('successModal');
+    modal.style.display = 'block';
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('successModal');
+    modal.style.display = 'none';
+  }
+
+  // Close the modal when clicking outside of it
+  window.onclick = function(event) {
+    const modal = document.getElementById('successModal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+
 
 let btnWebOne = document.getElementById('btnweb_one');
 let btnWebTwo = document.getElementById("btnweb_two");
 let btnWebThree = document.getElementById("btnweb_three");
+let btnWebFour = document.getElementById("btnweb_four");
+let btnWebFive = document.getElementById("btnweb_five");
+let btnWebSix = document.getElementById("btnweb_six");
+
 
 
 btnWebOne.addEventListener('click', function(){
@@ -85,6 +137,19 @@ btnWebThree.addEventListener('click', function(){
   window.open('https://bmw-drivebavaria-official.netlify.app/', 'blank')
 })
 
+btnWebFour.addEventListener('click', function(){
+    window.open('https://www.webfolio.co.za/', 'blank')
+  })
+
+btnWebFive.addEventListener('click', function(){
+    window.open('https://designx-signup-and-login-system.onrender.com', 'blank')
+  })
+
+btnWebSix.addEventListener('click', function(){
+    window.open('https://dark-angel-tattoos.netlify.app/', 'blank')
+  })
+
+/*=============== SHOW MENU ===============*/
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -99,6 +164,28 @@ navToggle.addEventListener('click', () =>{
 navClose.addEventListener('click', () =>{
    navMenu.classList.remove('show-menu')
 })
+
+/* Close menu when a nav link is clicked */
+const navLinks = document.querySelectorAll('.nav__link')
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('show-menu')
+    })
+})
+// const navMenu = document.getElementById('nav-menu'),
+//       navToggle = document.getElementById('nav-toggle'),
+//       navClose = document.getElementById('nav-close')
+
+/* Menu show */
+// navToggle.addEventListener('click', () =>{
+//    navMenu.classList.add('show-menu')
+// })
+
+/* Menu hidden */
+// navClose.addEventListener('click', () =>{
+//    navMenu.classList.remove('show-menu')
+// })
 
 /*=============== LOGIN ===============*/
 const login = document.getElementById('login'),
