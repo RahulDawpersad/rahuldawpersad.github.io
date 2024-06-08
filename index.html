@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="google-adsense-account" content="ca-pub-9213066977725342">
     <meta content="" name="keywords">
-    <meta name="description" content="DesignX: Your go-to for web development and graphic design. Founded and developed by Rahul Dawpersad, I bring your ideas to life with creativity and skill.">
+    <meta name="description"
+        content="DesignX: Your go-to for web development and graphic design. Founded and developed by Rahul Dawpersad, I bring your ideas to life with creativity and skill.">
 
     <!-- Favicon -->
     <link href="img/code-s-slash-line.png" rel="icon">
+
     <title>DesignX | Web & Graphic Design</title>
+
 
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
@@ -31,6 +33,9 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- Include the reCAPTCHA JavaScript API -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -39,13 +44,14 @@
     <link rel="stylesheet" href="scss/module.css">
 
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Preloader Start -->
-    <div class="loader-wrapper">
-       <div class="custom-loader"></div>
-    </div>
+    <!-- <div class="loader-wrapper">
+        <div class="custom-loader"></div>
+    </div> -->
     <!-- Preloader End -->
 
     <!-- Navbar Start -->
@@ -58,32 +64,33 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link" title="Home">Home</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a>
+                        <a href="#about" class="nav__link" title="About">About</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">Services</a>
+                        <a href="#services" class="nav__link" title="Services">Services</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#pricing" class="nav__link">Pricing</a>
+                        <a href="#pricing" class="nav__link" title="Pricing">Pricing</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a>
+                        <a href="#projects" class="nav__link" title="Projects">Projects</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="https://www.rahuldawpersad.com/blog.html" class="nav__link">Blog</a>
+                        <a href="https://rahuldawpersad-blog.netlify.app/" class="nav__link" title="Blog">Blog</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">contact</a>
+                        <a href="#contact" class="nav__link" title="Contact">contact</a>
                     </li>
+
                 </ul>
 
                 <!-- Close button -->
@@ -95,9 +102,19 @@
             <div class="nav__actions">
                 <!-- Login button -->
                 <!-- <i class="ri-user-line nav__login nav__link" id="login-btn"></i> -->
-                <i class="ri-folder-video-fill nav__login nav__link" id="login-btn"></i>
+               <a href="#">
+                <img
+                src="img/chatbot_icon.png"
+                class="nav__link"
+                title="ConvoBot"
+                alt="chatbot-icon"
+                style="width: 25px; height: 25px;"
+              />
+               </a>
+               
+                <i class="ri-folder-video-fill nav__login nav__link" id="login-btn" title="DesignX Video"></i>
 
-                <a href="https://github.com/RahulDawpersad">
+                <a href="https://github.com/RahulDawpersad" title="Github">
                     <i class="ri-github-fill nav__link github"></i>
                 </a>
 
@@ -123,33 +140,40 @@
 
 
     <!-- Swiper/Carousel Start -->
-    <section class="main swiper mySwiper">
+    <section class="main swiper mySwiper" id="home">
         <div class="wrapper swiper-wrapper">
             <div class="slide swiper-slide">
-                <img src="img/carousel4.jpg" alt="" class="image" />
+                <img src="img/slider_new9.jpg" alt="" class="image" />
                 <div class="image-data">
                     <h1 class="text">WELCOME TO DESIGNX</h1>
                     <p class="text-two">
                         Your go-to destination for creative <br /> web development and graphic design solutions.
                     </p>
+                    <button class="btn-portfolio"><i class="animation"></i>Portfolio<i class="animation"></i>
+                    </button>
                 </div>
             </div>
             <div class="slide swiper-slide">
-                <img src="img/carousel3.jpg" alt="" class="image" />
+                <!-- <img src="img/carousel3.jpg" alt="" class="image" /> -->
+                <img src="img/slider_new8.jpg" alt="" class="image" />
                 <div class="image-data">
-                    <h1 class="text">Unleash Your Brand's Potential</h1>
+                    <h1 class="text heading-two">Unleash Your Brand's Potential</h1>
                     <p class="text-two">
                         Elevate your online presence with stunning <br> website designs and captivating graphic content.
-                    </p>
+                    </p class="text-two">
+                    <button class="btn-portfolio"><i class="animation"></i>Portfolio<i class="animation"></i>
+                    </button>
                 </div>
             </div>
             <div class="slide swiper-slide">
-                <img src="img/carousel2.jpg" alt="" class="image" />
+                <img src="img/slider_new6.jpg" alt="" class="image" />
                 <div class="image-data">
                     <h1 class="text">Innovative Design Solutions</h1>
                     <p class="text-two">
                         From concept to execution, I bring your <br /> ideas to life with precision and creativity.
-                    </p>
+                    </p class="text-two">
+                    <button class="btn-portfolio"><i class="animation"></i>Portfolio<i class="animation"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -176,7 +200,7 @@
                             the
                             27th of June 2023 out of my passion for systems development, particularly web development.
                         </p>
-                        <img class="img-fluid" src="img/webdev2.gif" alt="about-img-gif">
+                        <img class="img-fluid" src="img/websites/github_video.gif" alt="about-img-gif">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -217,9 +241,6 @@
                     <div class="header-section">
                         <h2 class="title">DESIGNX <span></span> <span>Services</span></h2>
                         <h2 class="title-two">WHERE CODE IS ART <span>.</span></h2>
-                        <!-- <p class="description">
-                            What I Do.
-                        </p> -->
                     </div>
                 </div>
             </div>
@@ -228,7 +249,6 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="single-service">
                         <div class="part-1">
-                            <!-- <i class="fab fa-500px"></i> -->
                             <img src="img/website-icon.png" class="icon-img fa-500px" alt="">
 
                             <h3 class="title">Web Development</h3>
@@ -238,7 +258,7 @@
                                 At DesignX, I am a talented website developer who loves creating new ideas and enjoy
                                 developing high quality web pages.
                             </p>
-                            <a href="components/web-pricing.html" target="_blank"><i
+                            <a href="components/web-pricing.html" class=" target=" _blank"><i
                                     class="fas fa-arrow-circle-right"></i>View Plan</a>
                         </div>
                     </div>
@@ -248,18 +268,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="single-service">
                         <div class="part-1">
-                            <!-- <i class="fab fa-angellist"></i> -->
                             <img src="img/icons8-web-hosting-64.png" class="icon-img hosting fa-500px" alt="">
                             <h3 class="title">Web Hosting</h3>
                         </div>
                         <div class="part-2">
                             <p class="description">
-                                <!-- I offer affordable hosting solutions for my client's websites on various platforms,
-                                ensuring reliable performance and accessibility. -->
                                 I provide hosting solutions, supporting various platforms, to help websites succeed. My
                                 goal is to ensure reliable performance and clear accessibility.
                             </p>
-                            <a href="https://webfolio.co.za/components/pricing" target="_blank"><i
+                            <a href="https://webfolio.co.za/components/pricing" class=" target=" _blank"><i
                                     class="fas fa-arrow-circle-right"></i>View Plan</a>
                         </div>
                     </div>
@@ -269,7 +286,6 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="single-service">
                         <div class="part-1">
-                            <!-- <i class="fas fa-award"></i> -->
                             <img src="img/graphic-design.png" class="icon-img fa-500px" alt="">
                             <h3 class="title">Graphic Design</h3>
                         </div>
@@ -278,15 +294,40 @@
                                 I design logos, ads, CVs, posters, and menus that help businesses stand out. My goal is
                                 to create modern designs that communicate my client's message.
                             </p>
-                            <a href="https://graphic-and-web-development-projects.netlify.app/"
-                                target="_blank"><i class="fas fa-arrow-circle-right "></i>View Projects</a>
+                            <a href="https://graphic-and-web-development-projects.netlify.app/" class="
+                                target=" _blank"><i class="fas fa-arrow-circle-right "></i>View Projects</a>
                         </div>
                     </div>
                 </div>
-
             </div>
+
+
+            <div class="container text-center">
+                <div class="chatbot-container">
+                    <h2 class="mb-4 text-white chatbot-text">Try ConvoBot</h2>
+                <!-- <p class="mb-4">
+                  My chatbot only generates limited text upon the question asked.
+                  It does not generate code or massive amounts of text as it is a
+                  pretrained model trained on limited data.
+                </p> -->
+                <!-- <a href="https://www.example.com/chatbot" class="btn btn-primary btn-lg" target="_blank">
+                  <i class="fas fa-comments"></i> Chat with ConvoBot
+                </a> -->
+                <button class="pushable">
+                    <span class="shadow"></span>
+                    <span class="edge"></span>
+                    <span class="front">
+                        Chat with ConvoBot
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+
+
         </div>
     </section>
+    
     <!-- End Service Section -->
 
 
@@ -307,19 +348,19 @@
                         <div class="btn-sm-square rounded-circle me-3">
                             <i class="fa fa-check icon-check"></i>
                         </div>
-                        <span>Tailoring your vision with creativity and precision.</span>
+                        <span class="icon-box">Tailoring your vision with creativity and precision.</span>
                     </div>
                     <div class="d-flex align-items-center mb-3 feature-wrapper">
                         <div class="btn-sm-square rounded-circle me-3">
                             <i class="fa fa-check icon-check"></i>
                         </div>
-                        <span>Exceeding expectations with meticulous care.</span>
+                        <span class="icon-box">Exceeding expectations with meticulous care.</span>
                     </div>
                     <div class="d-flex align-items-center mb-3 feature-wrapper">
                         <div class="btn-sm-square rounded-circle me-3">
                             <i class="fa fa-check icon-check"></i>
                         </div>
-                        <span>Delivering top-tier results for your brand.</span>
+                        <span class="icon-box">Delivering top-tier results for your brand.</span>
                     </div>
                     <div class="row g-4 pt-3 client-wrap">
                         <div class="col-sm-6">
@@ -355,7 +396,7 @@
         <div class="container">
             <div class="sec-title text-center">
                 <h1 class="title">DESIGNX <span>PRICING</span></h1>
-                <h2>Choose a Plan</h2>
+                <h2 class="text-center">Choose a Plan</h2>
             </div>
 
             <div class="outer-box">
@@ -380,7 +421,7 @@
                                 <li class="false">No Databases</li>
                             </ul>
                             <div class="btn-box">
-                                <a href="https://designx-contact.glitch.me/" target="_blank"
+                                <a href="https://designx-contact-form.onrender.com/" target="_blank"
                                     class="theme-btn">Contact</a>
                             </div>
                         </div>
@@ -404,7 +445,7 @@
                                 <li class="true">Limited Databases</li>
                             </ul>
                             <div class="btn-box">
-                                <a href="https://designx-contact.glitch.me/" target="_blank"
+                                <a href="https://designx-contact-form.onrender.com/" target="_blank"
                                     class="theme-btn">Contact</a>
                             </div>
                         </div>
@@ -428,7 +469,7 @@
                                 <li class="true">Database Expanded</li>
                             </ul>
                             <div class="btn-box">
-                                <a href="https://designx-contact.glitch.me/" target="_blank"
+                                <a href="https://designx-contact-form.onrender.com/" target="_blank"
                                     class="theme-btn">Contact</a>
                             </div>
                         </div>
@@ -451,22 +492,40 @@
             </div>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
                 <div class="col image-container">
-                    <img src="img/websites/nail&beauty (1).png" class="img-fluid image"
+                    <img src="img/websites/nail-and-beauty.png" class="img-fluid image"
                         alt="Lorem ipsum dolor sit amet">
                     <button class="view-button" id="btnweb_one">View</button>
                 </div>
                 <div class="col image-container">
-                    <img src="img/websites/website2.png" class="img-fluid image"
+                    <img src="img/websites/indico_constructions.png" class="img-fluid image"
                         alt="Ipsum lorem dolor sit amet">
                     <button class="view-button" id="btnweb_two">View</button>
                 </div>
                 <div class="col image-container">
-                    <img src="img/website3.png" class="img-fluid image" alt="Dolor lorem ipsum sit amet">
+                    <img src="img/websites/BMW_DriveBavaria.png" class="img-fluid image"
+                        alt="Dolor lorem ipsum sit amet">
                     <button class="view-button" id="btnweb_three">View</button>
                 </div>
+                <!-- <br /> -->
+                <div class="col image-container">
+                    <img src="img/websites/webfolio.png" class="img-fluid image" alt="Lorem ipsum dolor sit amet">
+                    <button class="view-button" id="btnweb_four">View</button>
+                </div>
+                <div class="col image-container">
+                    <img src="img/websites/DesignX_userauth-system.png" class="img-fluid image"
+                        alt="Ipsum lorem dolor sit amet">
+                    <button class="view-button" id="btnweb_five">View</button>
+                </div>
+                <div class="col image-container">
+                    <img src="img/websites/dark-angels-tattoo.png" class="img-fluid image"
+                        alt="Dolor lorem ipsum sit amet">
+                    <button class="view-button" id="btnweb_six">View</button>
+                </div>
             </div>
+
             <div class="btn-container text-center">
-                <a class="fancy" href="#">
+                <a class="fancy"
+                    href="https://graphic-and-web-development-projects.netlify.app/public/components/websites.html">
                     <span class="top-key"></span>
                     <span class="text">VIEW MORE</span>
                     <span class="bottom-key-1"></span>
@@ -479,7 +538,7 @@
 
 
     <!-- Contact Start -->
-    <div class="container-fluid contact-section py-5" id="contact">
+    <!-- <div class="container-fluid contact-section py-5" id="contact">
         <div class="container py-5">
             <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
                 <div class="contact-text">
@@ -487,46 +546,33 @@
                     <p class="mb-4 contact-sub-header">Your Trusted Partner In Web Development Solutions</p>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <!-- <p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
                     <div class="wow fadeIn" data-wow-delay="0.3s">
-                        <form id="contactForm" action="https://formspree.io/f/xeqygllk" method="POST">
+                        <form id="contactForm" action="https://formspree.io/f/xeqygllk" method="POST" onsubmit="return submitForm(event)">
                             <div class="row g-3">
                                 <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control hidden" id="name" name="name"
-                                            placeholder="John Doe">
-                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="John Doe">
                                         <div class="error-message" id="nameError"></div>
-                                        <!-- Error message for name field -->
-                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" name="email"
-                                            placeholder="example@gmail.com">
-                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com">
                                         <div class="error-message" id="emailError"></div>
-                                        <!-- Error message for email field -->
-                                    </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <input type="tel" class="form-control" id="phone" name="phone"
-                                            placeholder="+27 99 999 9999">
-                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="+27 99 999 9999">
                                         <div class="error-message" id="phoneError"></div>
-                                        <!-- Error message for phone number field -->
-                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here"
-                                            id="message" name="message" style="height: 150px"></textarea>
-                                        <label for="message"">Message</label>
+                                    <div class="textarea-wrapper">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" name="message" style="height: 150px"></textarea>
                                         <div class="error-message" id="messageError"></div>
-                                        <!-- Error message for message field -->
+                                    </div>
+                                </div>
+                                <div class="col-12 recaptcha-container">
+                                    <div class="recaptcha-inner">
+                                        <div class="g-recaptcha" data-sitekey="6LeUIIcpAAAAAPJSiddl-lU9cgRB-vCJWzU_peXD"></div>
+                                        <div class="error-message" id="recaptchaError" style="color: red"></div>
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -538,12 +584,125 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="container-fluid contact-section py-5" id="contact">
+        <div class="container py-5">
+            <div class="row">
+                <!-- start image column -->
+                <div class="col-md-6 image-container">
+                    <div class="svg-container">
+                        <img src="img/animated_svg.gif" alt="image" class="contact-svg">
+                    </div>
+                    <p class="mb-4 text-white"><i class="fa-solid fa-envelope"></i> designxfolio@gmail.com</p>
+                    <p class="mb-4 text-white phone-number"><i class="fa-solid fa-phone"></i> (+27) 69 702 0214</p>
+                    <p class="mb-4 text-white"><i class="fa-solid fa-location-dot"></i> Durban, KZN, South Africa</p>
+                </div>
+                <!-- end of image column -->
+                
+                <!-- start form column -->
+                <div class="col-md-6 mx-auto">
+                    <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <div class="contact-text">
+                            <h1 class="contact-header">CONTACT DESIGNX NOW</h1>
+                            <p class="mb-4 contact-sub-header">Your Trusted Partner In Web Development Solutions</p>
+                        </div>
+                    </div>
+                    <div class="wow fadeIn" data-wow-delay="0.3s">
+                        <form id="contactForm" action="https://formspree.io/f/xeqygllk" method="POST" onsubmit="return submitForm(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="input-field">
+                                        <input type="text" class="input" id="name" name="name" placeholder="John Doe">
+                                    </div>
+                                    <div class="error-message" id="nameError"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="input-field">
+                                        <input type="email" id="email" class="input" name="email" placeholder="example@gmail.com">
+                                    </div>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="input-field">
+                                        <input type="tel" id="phone" class="input" name="phone" placeholder="+27 99 999 9999">
+                                    </div>
+                                    <div class="error-message" id="phoneError"></div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="textarea-wrapper">
+                                        <textarea placeholder="Leave a message here" id="message" name="message" style="height: 150px"></textarea>
+                                        <div class="error-message" id="messageError"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 recaptcha-container">
+                                    <div class="recaptcha-inner">
+                                        <div class="g-recaptcha" data-sitekey="6LeUIIcpAAAAAPJSiddl-lU9cgRB-vCJWzU_peXD"></div>
+                                        <div class="error-message" id="recaptchaError" style="color: red"></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="w-100 py-3 btn-send" type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div><!-- end of form column -->
+            </div>
+        </div>
+    </div>
+    
+    
+
+    
+   
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Thank you for your message! We'll get back to you within 24 hours.</p>
+        </div>
     </div>
     <!-- Contact End -->
 
-    <!-- FAQs Start -->
-
-    <!-- FAQs Start -->
+    <section class="founder py-5" id="founder">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <figure class="about-banner">
+                        <img src="img/websites/rahul_hero.png"
+                            alt="A man in a alice blue shirt with a thinking expression" class="w-100" />
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <div class="about-content section-content">
+                        <p class="section-subtitle text-muted">Founder Of DesignX</p>
+                        <h2 class="h3 section-title">
+                            Full-Stack Web Developer & Software Developer
+                        </h2>
+                        <p class="section-text">
+                            On June 27, 2023, I founded DesignX, a company specializing in web development, software
+                            development, and graphic design (SAAS). I create visually appealing, user-friendly websites
+                            and handle secure signup and login systems with technologies like HTML, CSS, JavaScript,
+                            Node.js, Express.js, MySQL, and PHP. Additionally, i have expertise in software development
+                            using C# and Python. 
+                        </p>
+                        <p class="section-text">
+                            At DesignX, My goal is to continuously expand my skills and embrace
+                            new technologies to master both front-end and back-end development, shaping the digital
+                            world one line of code at a time.
+                        </p>
+                        <p class="section-text mt-3">
+                            Join me on this exciting journey to shape the digital world, one
+                            line of code at a time.
+                        </p>
+                        <div class="mt-3 text-center align-items-center">
+                            <button class="btn-Hire" id="hire-me">Hire me</button>
+                            <button class="btn-Hire" id="portfolio" style="margin-left: 0.6em;">Portfolio</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <!-- Footer Start -->
@@ -562,35 +721,38 @@
                             style="color: #f70037;"></i>Durban, KZN, South Africa</p>
                     <p style="color: #ffffff80;" class="footer-p"><i class="fa fa-phone-alt me-3"
                             style="color: #f70037;"></i>+27697020214</p>
-                    <p style="color: #ffffff80;"><i class="fa fa-envelope me-3"
-                            style="color: #f70037;"></i>designxfolio@gmail.com</p>
+                    <p style="color: #ffffff80;" class="footer-p"><i class="fa fa-envelope me-3" style="color: #f70037;">
+                        </i>designxfolio@gmail.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn  btn-social" href="https://twitter.com/dawpersad15814"><i class="fab fa-twitter"></i></a>
+                        <a class="btn  btn-social" href="https://twitter.com/dawpersad15814"><i
+                                class="fab fa-twitter"></i></a>
                         <a class="btn  btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-social" href="https://www.youtube.com/channel/UC9wwhtQ_DP8dVoc7_dj_Igg"><i class="fab fa-youtube"></i></a>
-                        <a class="btn  btn-social" href="linkedin.com/in/rahul-dawpersad-5680b7281"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn  btn-social" href="https://github.com/RahulDawpersad"><i class="fab fa-github"></i></a>
-                        <a class="btn  btn-social" href="https://discord.com/users/1216339643281440900"><i class="fab fa-discord"></i></a>
+                        <a class="btn btn-social" href="https://www.youtube.com/channel/UC9wwhtQ_DP8dVoc7_dj_Igg"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn  btn-social" href="linkedin.com/in/rahul-dawpersad-5680b7281"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a class="btn  btn-social" href="https://github.com/RahulDawpersad"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn  btn-social" href="https://discord.com/users/1216339643281440900"><i
+                                class="fab fa-discord"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <h5 class="mb-4" style="color: #f70037;">Links</h5>
-                    <a class="btn btn-link" href="https://webfolio.co.za"
-                    target="_blank">www.webfolio.co.za</a>
+                    <a class="btn btn-link" href="https://webfolio.co.za" target="_blank">www.webfolio.co.za</a>
                     <a class="btn btn-link" href="https://webfolio.co.za/components/founding"
                         target="_blank">Founding</a>
                     <a class="btn btn-link" href="https://webfolio.co.za/" target="_blank">About Rahul
                         Dawpersad</a>
-                    <a class="btn btn-link" href="https://designx-contact.glitch.me/"
-                        target="_blank">Contact Now</a>
+                    <a class="btn btn-link" href="https://designx-contact-form.onrender.com/" target="_blank">Contact
+                        Now</a>
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
                     <h5 class="mb-4" style="color: #f70037;">DesignX Services</h5>
                     <a class="btn btn-link"
                         href="https://graphic-and-web-development-projects.netlify.app/public/components/websites.html"
                         target="_blank">Web Development Projects</a>
-                    <a class="btn btn-link"
-                        href="https://graphic-and-web-development-projects.netlify.app/index.html"
+                    <a class="btn btn-link" href="https://graphic-and-web-development-projects.netlify.app/index.html"
                         target="_blank">Graphic Design Projects</a>
                     <a class="btn btn-link" href="" target="_blank">Code Solutions</a>
                 </div>
