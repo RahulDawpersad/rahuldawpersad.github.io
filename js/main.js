@@ -122,8 +122,7 @@ let btnWebThree = document.getElementById("btnweb_three");
 let btnWebFour = document.getElementById("btnweb_four");
 let btnWebFive = document.getElementById("btnweb_five");
 let btnWebSix = document.getElementById("btnweb_six");
-
-
+let btnConvoBot = document.getElementById("ConvoBot-button");
 
 btnWebOne.addEventListener('click', function(){
   window.open('https://nails-and-beauty.netlify.app/', 'blank')
@@ -148,6 +147,10 @@ btnWebFive.addEventListener('click', function(){
 btnWebSix.addEventListener('click', function(){
     window.open('https://dark-angel-tattoos.netlify.app/', 'blank')
   })
+
+btnConvoBot.addEventListener("click", function(){
+  window.location.href = 'https://convobot-chatbot.vercel.app'
+})
 
 /*=============== SHOW MENU ===============*/
 /*=============== SHOW MENU ===============*/
