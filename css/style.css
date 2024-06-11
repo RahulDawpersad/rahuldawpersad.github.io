@@ -1941,3 +1941,19 @@ form .btn-send{
   border-right: none;
 }
 
+/* To change the color of the scrollbar */
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #f70037;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #f70037;
+}
+
+
