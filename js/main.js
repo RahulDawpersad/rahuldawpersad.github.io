@@ -149,7 +149,7 @@ btnWebSix.addEventListener('click', function(){
   })
 
 btnConvoBot.addEventListener("click", function(){
-  window.location.href = 'https://convobot-chatbot.vercel.app'
+  window.location.href = 'https://convobot-chatbot-5reans3i2-rahuldawpersads-projects.vercel.app/'
 })
 
 /*=============== SHOW MENU ===============*/
