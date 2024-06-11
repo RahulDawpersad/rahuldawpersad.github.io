@@ -1943,17 +1943,25 @@ form .btn-send{
 
 /* To change the color of the scrollbar */
 
-::-webkit-scrollbar{
-    width: 10px;
+::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+    height: 12px; /* Height of the entire scrollbar */
 }
 
-::-webkit-scrollbar-thumb{
-    background: #f70037;
-    border-radius: 10px;
+/* Track (the background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: #f70037;
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 6px; /* Roundness of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the handle on hover */
 }
 
 
