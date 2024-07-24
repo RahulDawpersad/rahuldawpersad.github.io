@@ -17,6 +17,13 @@
     <!--=============== REMIXICONS ===============-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
 
+    <!-- Google Material Icons -->
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+
+
     <!-- Link to Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/655b3b7e45.js" crossorigin="anonymous"></script>
 
@@ -44,6 +51,90 @@
     <link rel="stylesheet" href="scss/module.css">
 
     <link href="css/style.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .heading-one {
+            font-size: 2em;
+            margin: 1em 0;
+        }
+
+        blockquote {
+            font-family: "Open Sans", sans-serif;
+            font-weight: normal;
+        }
+
+        /* .review-card{
+            grid-area: stack;
+            opacity: 0;
+        } */
+         .card{
+            border: none;
+         }
+
+        .stars {
+            display: flex;
+            gap: 4px;
+        }
+
+        .star {
+            width: 24px;
+            height: 24px;
+        }
+
+        .star path {
+            fill: gold;
+        }
+
+        /* Additional styles for different background colors */
+        .bg-color-1 {
+            background-color: #0097b2;
+        }
+
+        /* Gold */
+        .bg-color-2 {
+            background-color: #2e3469;
+        }
+
+        /* Tomato */
+        .bg-color-3 {
+            background-color: #fd5656;
+        }
+
+        /* SteelBlue */
+        .bg-color-4 {
+            background-color: #00bf63;
+        }
+
+        /* LimeGreen */
+        .bg-color-5 {
+            background-color: #eb5017;
+        }
+
+        /* MediumOrchid */
+        .bg-color-6 {
+            background-color: #5e17eb;
+        }
+
+        /* Orange */
+        .bg-color-7 {
+            background-color: #a42a2a;
+        }
+
+        /* Turquoise */
+        .bg-color-8 {
+            background-color: #830c4f;
+        }
+
+        /* Chocolate */
+        .bg-color-9 {
+            background-color: #383e48;
+        }
+
+        /* BlueViolet */
+    </style>
+
 
 </head>
 
@@ -541,6 +632,101 @@
         </div>
     </section>
     <!-- Project End -->
+
+
+
+
+        <!-- Review Section -->
+    <section class="bg-gradient-to-tr container-fluid reviews from-slate-200 to-slate-50 text-slate-800 flex flex-col justify-center items-center min-h-screen relative px-4" id="reviews">
+        <main
+        class="bg-white my-4 w-full max-w-2xl rounded-3xl text-center p-8 sm:p-16 [&_*]:ease-in-out"
+      >
+        <h2 class="text-2xl font-bold heading-one">
+          DesignX Customer / Client Reviews 
+        </h2>
+        <p class="text-sm paragraph-one">
+          I've been helping businesses do their best since 2023
+        </p>
+  
+        <div
+          class="mt-6 grid grid-cols-1 sm:grid-cols-[60px_auto_60px] [grid-template-areas:'slider_slider'_'nav-left_nav-right'] sm:[grid-template-areas:'nav-left_slider_nav-right'] gap-2 sm:gap-6 [&>button]:rounded-full [&>button]:w-10 [&>button]:h-10 [&>button]:shrink-0 [&>button]:text-gray-600 [&>button]:text-2xl [&>button]:transition-all [&>button]:duration-500 [&_button]:relative [&_button]:isolate [&_button]:bg-black sm:[&>button]:mt-8 before:[&>button]:absolute before:[&>button]:inset-px before:[&>button]:transition-all before:[&>button]:duration-300 before:[&>button]:-z-10 before:[&>button]:rounded-full hover:before:[&>button]:inset-full before:[&>button]:bg-white hover:[&>button]:text-white hover:[&>button]:bg-black hover:[&>button]:border-black"
+        >
+        <button
+        data-slide="prev"
+        class="[grid-area:nav-left] material-symbols-outlined"
+      >
+        navigate_before
+      </button>
+      <div id="slider" class="[grid-area:slider]">
+        <div
+          id="list-cards"
+          class="grid [grid-template-areas:'stack'] overflow-hidden"
+        >
+          <!-- cards loaded here -->
+        </div>
+      </div>
+          <button
+            data-slide="next"
+            class="[grid-area:nav-right] material-symbols-outlined"
+          >
+            navigate_next
+          </button>
+        </div>
+    </main>
+  
+      <!-- template - cards -->
+      <template id="tpl-card">
+        <!-- <div class="card [grid-area:stack] opacity-0"> -->
+            <div class="cards [grid-area:stack] opacity-0"">
+          <blockquote
+            class="text-white rounded-md p-6 text-sm transition-all duration-500 scale-0 relative isolate before:absolute before:w-4 before:h-4 before:rotate-45 before:-bottom-2 before:left-2/4 before:-translate-x-2/4 before:-z-10 before:-translate-y-full before:transition before:duration-500 before:delay-500"
+          ></blockquote>
+          <div
+            class="details text-sm translate-y-[150px] transition-all duration-500 flex flex-col items-center gap-2 mt-6"
+          >
+            <img review-img class="w-16 h-16 object-cover rounded-full" alt="" />
+            <div class="">
+              <p review-name class="text-sm font-bold"></p>
+              <p review-role class="text-xs"></p>
+              <div class="stars">
+                <svg class="star" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                  />
+                </svg>
+                <svg class="star" viewBox="0 0 24 24">
+                  <path
+                    d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.62L12 2 9.19 8.62 2 9.24l5.46 4.73L5.82 21z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </section>
+
+
+
+
+
+
+    
 
 
     <!-- Contact Start -->
