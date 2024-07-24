@@ -116,6 +116,156 @@ function validateForm() {
   }
 
 
+// Review Functionality
+const REVIEWS = [
+  {
+      id: 6,
+      name: 'Ethan',
+      // role: 'Entrepreneur',
+      avatar: 'img/reviews/img2.png',
+      review: `The web development service from DesignX was exceptional. The final product was visually appealing and highly functional. Excellent attention to detail.`,
+  },
+  {
+      id: 0,
+      name: 'Bob',
+      role: 'Architect',
+      avatar: 'img/reviews/img1.png',
+      review: `Working with DesignX was a delight. They created a fantastic logo for my company, showcasing remarkable creativity and professionalism`,
+  },
+  {
+      id: 2,
+      name: 'Charlie',
+      role: 'DevOps Engineer',
+      avatar: 'img/reviews/img3.png',
+      review: `"Thanks to the seamless web hosting service, our site runs smoothly and efficiently. DesignX has proven to be reliable and effective.`,
+  },
+  {
+      id: 3,
+      name: 'Diana',
+      role: 'Product Manager',
+      avatar: 'img/reviews/img4.png',
+      review: `From eye-catching ads to stunning posters, DesignX's graphic design skills are superb. They played a crucial role in our successful ad campaign.`,
+  },
+  {
+      id: 13,
+      name: 'William',
+      role: 'Software Engineer',
+      avatar: 'img/reviews/img6.png',
+      review: `I received many compliments on the business cards from DesignX. The quality and creativity were outstanding. Will definitely use their services again.`,
+  },
+  {
+      id: 4,
+      name: 'Fiona',
+      role: 'Marketing Specialist',
+      avatar: 'img/reviews/img5.png',
+      review: `DesignX turned our outdated website into a modern, user-friendly platform. Their web development skills are second to none. Highly recommended.`,
+  },
+  {
+      id: 10,
+      name: 'George',
+      role: 'Software Developer',
+      avatar: 'img/reviews/img7.png',
+      review: `The event invitations designed by DesignX were elegant and perfectly aligned with our theme. Their work is exceptional and delivered on time.`,
+  },
+  {
+      id: 11,
+      name: 'Hannah',
+      role: 'Graphic Designer',
+      avatar: 'img/reviews/img8.png',
+      review: `Our startup's branding package was spot-on, thanks to DesignX. Everything was cohesive and professional, demonstrating their dedication to quality.`,
+  },
+  {
+      id: 5,
+      name: 'Ian',
+      role: 'CTO',
+      avatar: 'img/reviews/img9.png',
+      review: `From flyers to posters, DesignX consistently delivers creative and impactful designs. Their graphic design services are truly outstanding.`,
+  },
+];
+
+// Common vars
+let currentCard;
+
+// Add reviews to DOM
+function renderReviews() {
+  const tplCard = document.querySelector("#tpl-card");
+  const listCards = document.querySelector("#list-cards");
+
+  const bgColorClasses = [
+      'bg-color-1', 'bg-color-2', 'bg-color-3', 'bg-color-4', 
+      'bg-color-5', 'bg-color-6', 'bg-color-7', 'bg-color-8', 'bg-color-9'
+  ];
+
+  REVIEWS.forEach((r, idx) => {
+      const clone = tplCard.content.cloneNode(true);
+      clone.querySelector("blockquote").innerText = `"${r.review}"`;
+      clone.querySelector("[review-name]").innerText = r.name;
+      // clone.querySelector("[review-role]").innerText = r.role;
+      clone.querySelector("[review-img]").src = r.avatar;
+
+      // Assign background color
+      clone.querySelector("blockquote").classList.add(bgColorClasses[idx % bgColorClasses.length]);
+
+      if (idx === 0) {
+          // Remove translate on first card
+          clone.querySelector("div").classList.remove("opacity-0")
+          clone.querySelector("blockquote").classList.remove("scale-0", "before:-translate-y-full")
+          clone.querySelector(".details").classList.remove("scale-0", "translate-y-[150px]")
+          currentCard = clone.querySelector("div");
+      }
+      listCards.append(clone)
+  });
+}
+
+// SLIDER
+function sliderInit() {
+  // Add reviews to DOM
+  renderReviews()
+
+  let currentIndex = 0;
+  const slider = document.querySelector("#slider");
+  const slides = slider.querySelectorAll(".cards");
+  const totalSlides = REVIEWS.length;
+  const sliderButtons = document.querySelectorAll("[data-slide]");
+
+  sliderButtons.forEach(btn => {
+      btn.addEventListener("click", (e) => {
+          sliderButtons[0].classList.add("translate-x-20")
+          sliderButtons[1].classList.add("-translate-x-20")
+
+          // Slide out old current card
+          currentCard.querySelector("blockquote").classList.add("scale-0", "before:-translate-y-full")
+          currentCard.querySelector(".details").classList.add("scale-0", "translate-y-[150px]")
+
+          // Move currentIndex forwards or backwards
+          if (btn.getAttribute("data-slide") === "prev") {
+              currentIndex = (totalSlides + currentIndex - 1) % totalSlides;
+          } else {
+              currentIndex = (totalSlides + currentIndex + 1) % totalSlides;
+          }
+
+          // Slide in new current card
+          setTimeout(() => {
+              currentCard = slides[currentIndex];
+              currentCard.classList.remove("opacity-0")
+              currentCard.querySelector("blockquote").classList.remove("scale-0", "before:-translate-y-full")
+              currentCard.querySelector(".details").classList.remove("scale-0", "translate-y-[150px]");
+
+              sliderButtons[0].classList.remove("translate-x-20")
+              sliderButtons[1].classList.remove("-translate-x-20")
+          }, 500)
+      })
+  });
+}
+
+sliderInit();
+
+// End of Review Functionality
+
+
+
+
+
 let btnWebOne = document.getElementById('btnweb_one');
 let btnWebTwo = document.getElementById("btnweb_two");
 let btnWebThree = document.getElementById("btnweb_three");
