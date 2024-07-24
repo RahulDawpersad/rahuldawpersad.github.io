@@ -137,7 +137,7 @@ const REVIEWS = [
       name: 'Charlie',
       role: 'DevOps Engineer',
       avatar: 'img/reviews/img3.png',
-      review: `"Thanks to the seamless web hosting service, our site runs smoothly and efficiently. DesignX has proven to be reliable and effective.`,
+      review: `Thanks to the seamless web hosting service, our site runs smoothly and efficiently. DesignX has proven to be reliable and effective.`,
   },
   {
       id: 3,
