@@ -891,17 +891,27 @@
     <script defer>
         document.addEventListener('DOMContentLoaded', function () {
             var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1,
-                loop: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
+    slidesPerView: 1,
+    loop: true,
+    speed: 800, // Increase/decrease speed for smoother transition
+    spaceBetween: 0,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 5000, // Adjust the delay between slides
+        disableOnInteraction: false, // Keeps autoplay even after interactions
+    },
+    effect: "fade", // Optional: Use "fade" effect for smoother transitions
+    fadeEffect: {
+        crossFade: true,
+    },
+});
         });
     </script>
 
