@@ -765,17 +765,19 @@ a.button:hover {
   background-color: #f70037;
 } */
 
-.heading-container{
+.heading-container .about-header{
   position: relative;
   text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
-.heading-container .about-header::before {
+.heading-container .about-header:before {
   content: "";
   position: absolute;
   bottom: 0;
   margin: -0.3em;
-  left: 48.5%;
+  left: 50%;
   transform: translateX(-50%);
   width: 140px;
   height: 3px;
@@ -1052,6 +1054,7 @@ ul {
 
 .feature-heading {
   font-family: "Acme", sans-serif;
+  position: relative;
   color: #000000;
   font-size: 1.4em;
   font-weight: 600;
@@ -1061,7 +1064,9 @@ ul {
 .feature-heading:before {
   content: "";
   position: absolute;
-  top: 70px;
+  bottom: -0.3em;
+  left: 18.8%;
+  transform: translateX(-50%);
   width: 140px;
   height: 3px;
   background-color: #f70037;
@@ -1657,6 +1662,76 @@ img {
 }
 
 
+/* Review Styling */
+
+.review-heading {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+blockquote {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+.card{
+  border: none;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+}
+
+.star path {
+  fill: gold;
+}
+
+.bg-color-1 {
+  background-color: #0097b2;
+}
+
+.bg-color-2 {
+  background-color: #2e3469;
+}
+
+.bg-color-3 {
+  background-color: #fd5656;
+}
+
+.bg-color-4 {
+  background-color: #00bf63;
+}
+
+.bg-color-5 {
+  background-color: #eb5017;
+}
+
+.bg-color-6 {
+  background-color: #5e17eb;
+}
+
+.bg-color-7 {
+  background-color: #a42a2a;
+}
+
+.bg-color-8 {
+  background-color: #830c4f;
+}
+
+.bg-color-9 {
+  background-color: #383e48;
+}
+
+
+/* End of Review Styling */
+
+
 /*** Contact ***/
 
 .contact-section {
@@ -1665,6 +1740,7 @@ img {
 }
 
 .contact-header{
+  position: relative;
   color: #f4f7fe;
   font-size: 1.6em;
   margin: 1em 0;
@@ -1941,27 +2017,18 @@ form .btn-send{
   border-right: none;
 }
 
+
 /* To change the color of the scrollbar */
 
-::-webkit-scrollbar {
-    width: 12px; /* Width of the entire scrollbar */
-    height: 12px; /* Height of the entire scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
 }
 
-/* Track (the background of the scrollbar) */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Color of the scrollbar track */
+::-webkit-scrollbar-thumb{
+    background: #f70037;
+    border-radius: 10px;
 }
 
-/* Handle (the draggable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-    background: #f70037; /* Color of the scrollbar handle */
-    border-radius: 6px; /* Roundness of the handle */
+::-webkit-scrollbar-thumb:hover{
+    background: #f70037;
 }
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the handle on hover */
-}
-
-
