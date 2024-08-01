@@ -798,7 +798,7 @@ a.button:hover {
 
 .heading-container span {
   color: var(--new-color);
-  font-family: "Acme", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
