@@ -1802,8 +1802,12 @@ form .input-field .input::placeholder{
   outline: none;
 }
 
+.textarea-wrapper textarea{
+  color: #ffffff;
+}
+
 .textarea-wrapper textarea::placeholder{
-  color: #aaa;
+  color: #ffffff;
 }
 
 form .btn-send{
